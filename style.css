@@ -1,0 +1,168 @@
+:root {
+    --main-color: #175db2ff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Tahoma, Arial;
+}
+
+h1 {
+    text-align: center;
+    background-color: var(--main-color);
+    padding: 10px;
+}
+
+.repo-container {
+    background-color: #dfdfdf;
+    width: auto;
+    margin: 50px auto;
+    padding: 15px;
+    padding-top: 20px;
+    border-radius: 6px;
+}
+
+.get-repo {
+    display: flex;
+}
+
+.get-repo input {
+    width: 100%;
+    padding: 15px;
+    border: none;
+    border-radius: 2px;
+    font-size: 19px;
+    font-weight: bold;
+}
+
+.get-repo input:focus {
+    outline: none;
+}
+
+.get-repo>span {
+    background-color: var(--main-color);
+    padding: 15px;
+    margin-left: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 20px;
+    white-space: nowrap;
+    border-radius: 2px;
+}
+
+.check-btn {
+    position: relative;
+    background-color: #dfdfdf;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+h4 {
+    font-size: 22px;
+    margin-top: 18px;
+}
+
+.check-btn span:not(.just-name) {
+    background-color: var(--main-color);
+    padding: 10px 12px;
+    color: white;
+    cursor: pointer;
+    font-size: 12px;
+}
+
+.just-name {
+    padding: 10px 12px;
+    color: white;
+    background-color: black;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 10px;
+    position: relative;
+    left: 80px;
+}
+
+
+.show-data {
+    background-color: white;
+    color: var(--main-color);
+    padding: 15px;
+    margin: 10px;
+    font-weight: bold;
+    text-align: center;
+    border-radius: 4px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+}
+
+@media (max-width: 450px) {
+    .repo-container {
+        width: 350px;
+        margin: 10px auto;
+    }
+
+    .show-data {
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    }
+
+    .name-card div,
+    .email-card div {
+        font-size: 8px !important;
+    }
+}
+
+.name,
+.email,
+.phone {
+    color: black;
+    background-color: #dfdfdf;
+    padding: 16px;
+    margin: 0 5px 12px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+.name-card div,
+.email-card div,
+.phone-card div {
+    color: black;
+    background-color: var(--main-color);
+    padding: 12px;
+    border-radius: 6px;
+    margin: 10px;
+    font-size: 14px;
+}
+
+.choise h4 {
+    margin-bottom: 0;
+}
+
+.add-name,
+.add-email,
+.add-phone {
+    display: contents;
+}
+
+.add-name span {
+    background-color: var(--main-color);
+    color: white;
+
+}
+
+.d-none {
+    display: none;
+}
+
+.d-block {
+    display: block;
+}
+
+.check-btn span.active {
+    opacity: .4;
+}
+
+/* 
+https://api.github.com/users/ElzeroWebSchool/repos
+ */
